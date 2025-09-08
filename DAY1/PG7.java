@@ -30,7 +30,7 @@ public class PG7 {
         else{
             System.out.println("Invalid input");
         }
-        
+        sc.close();
     }
     
 }

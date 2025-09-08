@@ -29,7 +29,7 @@ public class PG4 {
         System.out.println("String: str = "+str);
 
         System.out.println("The sum of "+a+" and "+b+" is "+(a+b));
-        
+        sc.close();
     }
     
 }

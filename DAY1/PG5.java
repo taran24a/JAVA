@@ -1,4 +1,4 @@
-
+package DAY1;
 import java.util.Scanner;
 public class PG5 {
     public static void main(String[] args) {
