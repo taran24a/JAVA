@@ -17,5 +17,6 @@ public class PG7 {
         for (int i = 0; i < terms; i++) {
             System.out.print(fibonacci(i) + " ");
         }
+        sc.close();
     }
 }
