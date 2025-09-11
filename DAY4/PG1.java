@@ -6,6 +6,10 @@ public class PG1 {
         for(int i=0;i<nums.length;i++){
             System.out.println(nums[i]);
         }
+        System.out.println();
+        for(int num:nums){
+            System.out.println(num);
+        }
     }
     
 }
