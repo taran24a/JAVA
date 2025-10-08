@@ -1,5 +1,3 @@
-package DAY8;
-
 //Functions of linked list:
 
 //Insert at head
@@ -42,9 +40,23 @@ public class LinkedList{
         }
         Node temp = head;
         while(temp!=null){
+            if(temp.next==null){
+                System.out.print(temp.data);
+                return;
+            }
             System.out.print(temp.data+"->");
             temp=temp.next;
         }
+    }
+    //Length of list
+    int length(){
+        int count=0;
+        Node temp = head;
+        while(temp!=null){
+            count++;
+            temp=temp.next;
+        }
+        return count;
     }
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
@@ -54,5 +66,8 @@ public class LinkedList{
         list.insertAtHead(40);
         list.insertAtHead(50);
         list.print();
+        System.out.println("\nLength of list is: "+list.length());
+        
     }
+    
 }
