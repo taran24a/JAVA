@@ -15,6 +15,7 @@ public class Stackk {
          public void insert(int val){
                 if(top==capacity-1){
                     System.out.println("Stack Overflow");
+                    return;
                 }
                 else{
                     top++;
