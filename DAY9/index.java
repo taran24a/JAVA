@@ -56,6 +56,17 @@ void pop(){
     }
 
 
+    public static void reverseArray(int[] array) {
+       Stack s = new Stack(array.length);
+         for (int value : array) {
+              s.push(value);
+         }
+         for (int i = 0; i < array.length; i++) {
+             array[i] = s.peek();
+                s.pop();
+         }
+    }
+
 
 
 
@@ -73,7 +84,14 @@ public class index {
         st.pop();
         st.display();
         System.out.println("Top element is: " + st.peek());
-        
+        int [] arr = {1, 2, 3, 4, 5};
+        System.out.println("Original array:");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println("\nReversed array:");
+        reverseArray(arr);
+
         
     }
 }
