@@ -34,7 +34,31 @@ class Stack{
             }
         }
 }
+
+void pop(){
+    if(top==-1){
+        System.out.println("Stack is empty");
+        return;
+    }else{
+        System.out.println("Popped element: "+arr[top]);
+        top--;
+    }
 }
+
+    // top // peek element
+    int peek(){
+        if(top==-1){
+            System.out.println("Stack is empty");
+            return -1;
+        }else{
+            return arr[top];
+        }
+    }
+
+
+
+
+
 public class index {
     public static void main(String[] args) {
         Stack st = new Stack(5);
@@ -46,7 +70,12 @@ public class index {
         st.push(50);
         st.push(60); // This should show stack is full
         st.display();
+        st.pop();
+        st.display();
+        System.out.println("Top element is: " + st.peek());
+        
         
     }
+}
 }
 
